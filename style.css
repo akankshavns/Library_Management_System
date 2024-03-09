@@ -1,0 +1,151 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: aquamarine;
+ 
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+#portal{
+  height: 5rem;
+    text-align: center;
+    font-size:300%;
+    padding-top: 1rem;
+    background-color: antiquewhite;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.login-page {
+  height: 70vh;
+  width: 20rem;
+  /* padding: 8% 0 0; */
+  /* margin-left: 35%;*/
+  margin-top: 2rem; 
+}
+
+div img {
+  height:"10px" ;width:"20px";
+}
+.authentication {
+  /* position: relative;
+  z-index: 1; */
+  background: #FFFFFF;
+  max-width: 360px;
+  /* margin: 0 auto 100px; */
+  padding: 50px 24px 50px 25px;
+  /* text-align: center; */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.inputdiv {
+  margin: 3px 3px 3px 3px ;
+  padding :5px;
+}
+
+
+form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 3rem;
+  box-shadow: 10px 5px 10px 4px rgb(243, 159, 159);
+ 
+}
+img {
+  height: 7rem;
+  width: 6rem;
+}
+ 
+form input :hover {
+  color: red;
+  
+}
+
+
+/* button { */
+  /* background-color: #86d1e0; white */
+  /* border: solid;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#back_button:hover{
+  background: green;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: green;
+  width: 100%;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  font-family: "Roboto", sans-serif;
+} */
+
+.red {
+  border: 1px solid red;
+}
+
+.green {
+  border: 1px solid rgb(0, 255, 21);
+}

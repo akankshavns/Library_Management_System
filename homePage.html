@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class=" heading">
+        <span class="name ">Pustakalay</span>
+        <span id="login" class="A"><a href="./User_login_page.html"><button>Log in</button></a></span>
+        <span id="Signin" class="A"><button>Sign in</button></span>
+    </header>
+    <nav class="shadow">
+        <span><a href="#">Home</a></span>
+        <span><a href="#">Books</a></span>
+        <span><a href="#">Magazines</a></span>
+        <span><a href="#">contact us</a></span>
+        <span><a href="#">FAQ</a></span>
+    </nav>
+    <div class="main">
+        <div class="centre shadow"></div>
+        <div class="right">
+            <div class="search shadow ">
+                <div class="searchbox ">
+                    <label class="test">Search books..</label>
+                    <input type="text" placeholder="Enter Book Name">
+                    <input type="text" placeholder="Enter Author Name">
+                    <button class="btn btn-primary">search</button>
+                </div>
+            </div>
+            <div class="categories shadow">
+                <div class="department shadow">
+                    <label for="">Department Based Book Catagory...</label><br>
+                    <button onclick="myFunction()" class="dropbtn">BCA</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">maths</a>
+                        <a href="#">physics</a>
+                        <a href="#">chemistry</a>
+                    </div>
+                    <button onclick="myFunction()" class="dropbtn">BSC</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">maths</a>
+                        <a href="#">physics</a>
+                        <a href="#">chemistry</a>
+                    </div>
+                    <button onclick="myFunction()" class="dropbtn">BA</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">maths</a>
+                        <a href="#">physics</a>
+                        <a href="#">chemistry</a>
+                    </div>
+                    <button onclick="myFunction()" class="dropbtn">BCOM</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">maths</a>
+                        <a href="#">physics</a>
+                        <a href="#">chemistry</a>
+                    </div>
+                    <button onclick="myFunction()" class="dropbtn">MCA</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">maths</a>
+                        <a href="#">physics</a>
+                        <a href="#">chemistry</a>
+                    </div>
+                </div>
+
+                <div class="othercat shadow"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        Hello Friends my self footer.
+    </footer>
+    <script src="./homepage.js"></script>
+</body>
+
+</html>
