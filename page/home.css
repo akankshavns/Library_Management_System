@@ -27,51 +27,70 @@ h2, p {
 header {
     height:5rem;
     background: rgba(245, 245, 245, 0.4); 
-	background-image: url("https://img.freepik.com/free-photo/abundant-collection-antique-books-wooden-shelves-generated-by-ai_188544-29660.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1704240000&semt=sph"); 
+	background-image: url("https://img.freepik.com/free-photo/abundant-collection-antique-books-wooden-shelves-generated-by-ai_188544-29660.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1704240000&semt=sph");
     position: fixed;
     left: 0px;
     right: 0px;
     top: 0px;
-    width: 100%;
     z-index: 2;
-    /* width: 100vw; */
-    /* display: flex;
-    flex-direction: row; */
+    display: flex;
+    align-items: center;
 }
 
-header button {
+header a {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
     border-radius: 1rem;
     height: 2rem;
     width: 5rem;
     background-image: linear-gradient(to right top, #73405a, #6a394d, #613340, #572d35, #4c272b);
     color: rgb(255, 8, 0);
-    font-weight: bold;
+    display: inline-block;
 }
 
 .name {
-    /* width: fit-content; */
     font-weight: bold;
     font-size: 40px;
     font-family:Forte;
     padding-left: 3rem;
-    padding-top: 3rem;
-    color: brown;
-    margin-top: 2rem;
-}
- #login{
-    float: right;
-    margin-top: 2rem;
-    margin-right: 5rem;
     
+    display: inline-block;
+    padding-top: 0px;
+    color: brown;
 }
 
-#Signin {
-    float: right;
-    margin-top: 2rem;
-    margin-right: 1rem;
+.signup {
+    position: absolute;
+    right: 1rem;
 }
-header button:hover {
-    background-color: rgb(35, 194, 101);
+
+.login {
+    position: absolute;
+    right: 7rem;
+}
+
+@media (width < 535px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    header .name {
+        padding-left: 0px;
+    }
+    .signup, .login {
+        display: block;
+        position: relative;
+        left: 0px;
+        margin: 0.5rem;
+
+    }
+}
+
+header a:hover {
    border: 1px solid red;
 }
 
@@ -112,12 +131,8 @@ nav a:hover {
 }
 .centre {
     background: rgb(238,174,202);
-    /* background-image: linear-gradient(to right top, #052737, #005a6a, #009176, #4bc458, #e0eb12); */
-   background-image: url(../photos/library.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   opacity: 0.4;
+    background-image: linear-gradient(to right top, #052737, #005a6a, #009176, #4bc458, #e0eb12);
+  
     height: 55rem;
     width: 50rem;
     margin-right: 0.3rem;
@@ -279,11 +294,9 @@ nav a:hover {
 
 footer {
     background-color: rgb(201, 195, 195);
-    height: 50vh;
-    width: 100vw;
+    height: 20vh;
     color: white;
 }
-
 
 
 
