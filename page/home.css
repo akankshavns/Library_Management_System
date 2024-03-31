@@ -121,7 +121,12 @@ nav span a {
 nav a:hover {
     color: blue;
 }
-
+.dropdown {
+    height: 12rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+}
 
 .main {
     display: flex;
