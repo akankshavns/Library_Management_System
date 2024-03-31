@@ -17,20 +17,25 @@ window.onclick = function(event) {
     }
   }
 }
-function dropFunction(){
-  document.getElementById("option").classList.toggle("show");
 
-}
- 
-window.onclick =function(event){
-  if (!event.target.matches('.dropdown')){
-    var dropdowns = document.getElementsByClassName("dropdown-option");
-    var i ;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+//this is for book dropdown.
+let addbooK = document.querySelector("#option");
+let disappear = document.querySelector("body");
+let appear = "none";
+addbooK .addEventListener("click",()=>{
+  if (appear==="none"){
+    appear= "flex";
+    document.querySelector(".dropdown").style.display="flex";
+    
   }
-}
+  // if (appear==="flex"){
+  //   appear= "none";
+  //   document.querySelector(".dropdown").style.display="none";
+  // }
+  else{
+    appear="none";
+    document.querySelector(".dropdown").style.display="none";
+  }
+})
+
+  
