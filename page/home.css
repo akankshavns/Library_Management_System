@@ -121,24 +121,34 @@ nav span a {
 nav a:hover {
     color: blue;
 }
-#option:hover {
+.choise:hover {
     color: blue;
 
 }
-.dropdown {
-    height: 12rem;
-    width: 8rem;
-    display: none;
-    flex-direction: column;
+#forbook{
     position: absolute;
     left:5rem;
+}
+.dropdown {
+    height: auto;
+    width: 8rem;
+    display: none;
+    position: absolute;
+    left:12rem;
+    flex-direction: column;
     background-color: rgb(253, 253, 253);
     box-shadow: var(--primary-shadow);
     border-radius: 5px;
     font-family: Courier New, monospace;
+    margin: 3px;
     
 
 }
+#forcontact {
+    position: absolute;
+    left: 21rem;
+}
+
 .dropdown a {
     text-decoration: none;
     color: black;

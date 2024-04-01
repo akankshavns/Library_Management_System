@@ -19,23 +19,80 @@ window.onclick = function(event) {
 }
 
 //this is for book dropdown.
-let addbooK = document.querySelector("#option");
-let disappear = document.querySelector("body");
+let addbooK = document.querySelector(".option");
+let disappear = document.querySelector(".main");
 let appear = "none";
 addbooK .addEventListener("click",()=>{
   if (appear==="none"){
     appear= "flex";
-    document.querySelector(".dropdown").style.display="flex";
-    
+    document.querySelector("#forbook").style.display="flex";
   }
-  // if (appear==="flex"){
-  //   appear= "none";
-  //   document.querySelector(".dropdown").style.display="none";
-  // }
+ 
   else{
     appear="none";
-    document.querySelector(".dropdown").style.display="none";
+    document.querySelector("#forbook").style.display="none";
   }
 })
+disappear.addEventListener("click",()=>{
+  if (appear==="flex"){
+    appear = "none";
+    document.querySelector("#forbook").style.display="none";
+  }
+ 
+ })
+
+ //this dropdown is ,for magazine option.
+ let Magazine = document.querySelector("#magazine");
+ let nonVisible = document.querySelector(".main");
+ let appears = "none";
+Magazine.addEventListener("click",()=>{
+  
+  if (appears==="none"){
+    appears= "flex";
+    document.querySelector("#formagazine").style.display="flex";
+    
+  }
+ 
+  else{
+    appears="none";
+    document.querySelector("#formagazine").style.display="none";
+  }
+})
+disappear.addEventListener("click",()=>{
+  if (appears==="flex"){
+    appears = "none";
+    document.querySelector("#formagazine").style.display="none";
+  }
+ 
+ })
+
+ let Contact = document.querySelector("#contact");
+ let abc = document.querySelector(".main");
+ let Visible = "none";
+Contact.addEventListener("click",()=>{
+  
+  if (appears==="none"){
+    appears= "flex";
+    document.querySelector("#forcontact").style.display="flex";
+    
+  }
+ 
+  else{
+    appears="none";
+    document.querySelector("#forcontact").style.display="none";
+  }
+})
+
+// abc.addEventListener("click",()=>{
+//   if (appears==="flex"){
+//     appears = "none";
+//     document.querySelector("#forcontact").style.display="none";
+//   }
+// console.log("hello"); 
+//  })
+
+
+ 
+ 
 
   
